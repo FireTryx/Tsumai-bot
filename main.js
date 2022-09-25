@@ -7,6 +7,6 @@ const config = require("./config.js")
 
 bot.commands = new Discord.Collection()
 
-bot.login(config.token)
+bot.login(process.env.TOKEN)
 loadCommands(bot)
 loadEvents(bot)
